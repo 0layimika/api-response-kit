@@ -1,5 +1,5 @@
 {
-  "name": "api-response-kit",
+  "name": "@0layimika/api-response-kit",
   "version": "0.1.0",
   "description": "A typed toolkit for consistent API success and error responses",
   "main": "dist/index.js",
@@ -36,5 +36,5 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
-  "private": true
+  "private": false
 }
