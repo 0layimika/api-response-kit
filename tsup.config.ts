@@ -1,8 +1,12 @@
 import {defineConfig} from "tsup";
 export default defineConfig({
-    entry: ["src/index.ts"],
-    format: ["esm", "cjs"],
+    entry: [
+        "src/index.ts",
+        "src/adapters/express.ts",
+        "src/adapters/fastify.ts",
+    ],
+    format: ["cjs", "esm"],
     dts: true,
     clean: true,
     sourcemap: true,
-});
+})
