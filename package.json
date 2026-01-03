@@ -1,6 +1,6 @@
 {
   "name": "@0layimika/api-response-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A typed toolkit for consistent API success and error responses",
   "main": "dist/index.js",
   "module": "dist/index.js",

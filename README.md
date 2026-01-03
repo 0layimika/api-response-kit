@@ -55,16 +55,16 @@ type ApiError = {
 ```
 ## Installation
 ```bash
-npm install api-response-kit
+npm install @0layimika/api-response-kit
 
-yarn add api-response-kit
+yarn add @0layimika/api-response-kit
 
-pnpm add api-response-kit
+pnpm add @0layimika/api-response-kit
 ```
 ## Basic Usage
 ### Success Helpers
 ```ts
-import { Ok, Created, NoContent } from "api-response-kit"
+import { Ok, Created, NoContent } from "@0layimika/api-response-kit"
 
 return Ok(user)
 return Created(newUser)
@@ -72,7 +72,7 @@ return NoContent()
 ```
 ### Error Helpers
 ```ts
-import { BadRequest, NotFound, Unauthorized } from "api-response-kit"
+import { BadRequest, NotFound, Unauthorized } from "@olayimika/api-response-kit"
 
 if (!user) return NotFound("User not found")
 if (!email) return BadRequest("Email is required")
@@ -94,7 +94,7 @@ export function getUser(id: string) {
 
 ## Express Adapter Example
 ```ts
-import { sendResponse } from "api-response-kit/express"
+import { sendResponse } from "@0layimika/api-response-kit/express"
 
 app.get("/users/:id", (req, res) => {
   const response = getUser(req.params.id)
@@ -103,7 +103,7 @@ app.get("/users/:id", (req, res) => {
 ```
 ## Custom Errors
 ```ts
-import { CustomError } from "api-response-kit"
+import { CustomError } from "@0layimika/api-response-kit"
 
 return CustomError({
   code: "PAYMENT_FAILED",
